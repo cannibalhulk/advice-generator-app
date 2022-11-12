@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Card starts here */
+.card{
+    border-radius: 15px;
+    width: 460px;
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: 0.3s ease-out;
+}
+
+.card h1{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card img{
+    margin-bottom: 65px;
+}
+
+.card p{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Card ends here */
+
+/* Magic button starts here */
+.dice-btn{
+    cursor: pointer;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background-color: hsl(150, 100%, 66%);
+    transition: 0.3s ease-out;
+}
+.dice-btn:hover{
+    transform: scale(1.08);
+    box-shadow: 2px 3px 30px 2px hsl(150, 100%, 66%);
+}
+/* Magic button ends here */
+
+
+@media screen and (min-width:375px) and (max-width:1440px) {
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .card{
+        margin: 0;
+        width: 370px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    .card img{
+        max-width: 94%;
+    }
+}
