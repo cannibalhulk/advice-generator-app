@@ -1,6 +1,6 @@
 
 //counter elave ettim
-let slip_id=34;
+let slip_id;
 
 /*funksiya default olaraq 34 deyerini qebul edir
 **her click etdikde counter 1 vahid artir
