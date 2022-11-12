@@ -16,7 +16,7 @@ const showQuote = (slip_id=34) => {
     .then((data) => {
       console.log(data.slip);
       const main = document.querySelector("main");
-
+      
       main.innerHTML = `
       <div class="card">
       <p>Advice #${data.slip.id}</p>
